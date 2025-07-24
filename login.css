@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/loginbg.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(1.5px);
+}
+.container{
+    background: rgba(0, 0, 0, 0.945);
+    width: 400px;
+    height: 400px;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    bottom: -7px;
+    right: -7px;
+    background:linear-gradient(crimson,rgba(255, 255, 255, 0.5),blue) ;
+    border-radius: 10px;
+    z-index: -1;
+    border: 1px solid;
+}
+.login{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 10px;
+    position: absolute;
+    top: 5px;
+    letter-spacing: 10px;
+    
+}
+input::placeholder{
+    color: white;
+   
+}
+.btn{
+    width: 275px;
+    border-radius: 25px;
+    padding: .5rem;
+    margin: 15px;
+    border: 2px solid red;
+    position: relative;
+    background: transparent;
+    color: white;
+}
+.btn_container{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 50px;
+}
+.btnn{
+    color: white;
+    background: transparent;
+    border: 2px solid red;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    margin: 20px 40px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .1s linear;
+}
+.btnn:hover{
+   font-size: 18px;
+}
