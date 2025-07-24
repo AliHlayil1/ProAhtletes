@@ -1,124 +1,123 @@
+/* Resets */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    background: url(assets/sven-mieke-MsCgmHuirDo-unsplash.jpg);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+   height: 100vh;
+   background: url(assets/background.jpg);
+   background-size: cover;
+   background-position:center;
+   background-attachment: fixed;
 }
 
-nav{
-    display: flex;
-    
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(2px);
-    margin-bottom: 100px;
-    position: sticky;
 
+/* Nav Bar Starts */
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   background: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(2px);
+   margin-bottom: 100px;
+   position: sticky;
 }
 .logo h1{
-    font-size: 3rem;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    cursor: default;
+   font-size: 3rem;
+   color: white;
+   text-shadow: 1px 1px 1px black;
+   cursor: default;
 }
  nav ul li{
-    list-style: none;
-    display: inline;
-    margin: 30px;
+   list-style: none;
+   display: inline;
+   margin: 30px;
  }
  nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    font-family: sans-serif;
+   text-decoration: none;
+   color: white;
+   font-weight: 700;
+   font-family: sans-serif;
  }
  nav ul li a:hover{
-    background-color: rgba(255, 255, 255, 0.096);
-    padding: 25px 1px;
-    border-bottom: 2px solid;
+   background-color: rgba(255, 255, 255, 0.096);
+   padding: 25px 1px;
+   border-bottom: 2px solid;
  }
+ /* Nav Bar Ends */
+
+ /* Header Starts */
  .header{
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
+   margin-bottom: 200px;
  }
-
- .header .section_one{
-    height: 400px;
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin-bottom: 200px;
+ /* Section One Starts */
+ .section_one{
+   height: 400px;
+   width: 1200px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   background-color: rgba(0, 0, 0, 0.2);
+   margin-bottom: 200px;
+   margin-top: 50px;
 
  }
  .section_one .box_one{
-    width: 500px;
-    height: 380px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+   width: 500px;
+   height: 380px;
+   display: flex;
+   flex-direction: column;
+   position: relative;
 
 
  }
- .main_heading{
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    width: fit-content;
-    border-bottom: 3px solid;
+ .section_one .box_one .main_heading{
+   color: white;
+   font-size: 2.5rem;
+   margin-bottom: 30px;
+   padding-bottom: 30px;
+   width: fit-content;
+   border-bottom: 3px solid;
  }
-
- .sub_heading{
-    max-width:100%;
-    max-height: 250px;
-    font-size: xx-large;
-    color: white;
-    word-spacing: 4px;
-    line-height: 45px;
-    overflow-y: scroll;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma;
-   
+ .section_one .box_one .sub_heading{
+   max-width:100%;
+   max-height: 250px;
+   font-size: xx-large;
+   color: white;
+   word-spacing: 4px;
+   line-height: 45px;
+   overflow-y: scroll;
+   padding: 20px;
+   border-radius: 10px;
+   font-family: Verdana, Geneva, Tahoma;
  }
  .sub_heading>i>b{
    color: wheat;
  }
- 
 .sub_heading::-webkit-scrollbar{
    background: transparent;
-    width: 10px;
-   
+   width: 10px;
 }
 .sub_heading::-webkit-scrollbar-thumb{
    background-color: rgba(255, 255, 255, 0.555);
-    border-radius: 10px;
-    cursor: pointer;
+   border-radius: 10px;
+   cursor: pointer;
 }
-
  .box_two{
-     width: 500px;
-    height: 380px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+   width: 500px;
+   height: 380px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
  }
- .img{
+ .img:nth-child(n){
    width: 200px;
    height: 300px;
    margin: 10px;
@@ -126,33 +125,28 @@ nav{
    border-radius: 5px;
    box-shadow: 5px 5px 5px rgb(0, 0, 0) ,-3px -3px 5px rgba(255, 255, 255, 0.289) ;
    border: 1px solid wheat;
-   
-
+   background-size: cover;
+   background-position: center;
+   transition: all .2s;
 
  }
  .img_one{
-   background: url(assets/charles-gaudreault-xXofYCc3hqc-unsplash.jpg);
+   background: url(assets/image\ 1.jpg);
    z-index: 0;
-   background-size: cover;
-   background-position: center;
-   transition: all .2s;
  }
  .img_two{
-   background: url(assets/daniel-azmanov-_Jt95VS0NNM-unsplash.jpg);
-   background-size: cover;
-   background-position: center;
+   background: url(assets/image\ 2.jpg);
    z-index: 1;
    right: 1px;
    bottom: 1px;
-   transition: all .2s;
-
  }
  .img_one:hover{
    z-index: 2;
    transform: scale(1.05);
  }
+ /* Section One Ends */
 
-
+ /* Section Two Starts */
  .section_two{
    height: 600px;
    width: 1200px;
@@ -171,41 +165,47 @@ nav{
    height: 540px;
    width: 1080px;
    scroll-snap-align: center;
-   border: 2px solid red;
+   border: none;
    flex-shrink: 0;
    margin: 20px;
    color: white;
+   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5),-5px -5px 5px rgba(245, 222, 179, 0.3);
+   border-radius: 5px;
+   backdrop-filter: blur(1.5px);
  }
- 
  .section_two::-webkit-scrollbar{
    background:transparent;
    width: 100px;
-   
 }
 .section_two::-webkit-scrollbar-thumb{
    background-color: rgba(255, 255, 255, 0.555);
-    border-radius: 10px;
-    cursor: pointer;
-
+   border-radius: 10px;
+   cursor: pointer;
 }
- 
 .bodybuilding{
+   background: rgba(255, 255, 255, 0.05);
    margin-left: 55px;
-   background-color: #ffffff2b;
    display: flex;
    flex-direction: column;
-   align-items: center;   
+   align-items:center;   
+  
 }
-.body_heading{
+.heading{
    font-size: 32px;
    margin-top: 2%;
    margin-left: 2%;
     border-bottom: 3px solid;
     width: fit-content;
     padding: 5px;
-    margin-bottom: 20px;
     align-self: start;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid;
+    color: wheat;
+   text-shadow: 2px 1px 1px black;
+
 }
+
 .bodybuilding .body_details{
    width: 900px;
    height: 400px;
@@ -213,166 +213,411 @@ nav{
    justify-content:space-between;
    align-items: center;
 }
+.box_heading{
+   color: wheat;
+   text-shadow: 2px 2px 2px black;
+   width: fit-content;
+   padding-left: 8px;
+   border-left: 3px solid ;
+}
+
 .body_details .body_box_one{
-   width: 450px;
+   display: flex;
+   justify-content: center;
+   width: 400px;
    height: 400px;
+   display: flex;
+   justify-content: center;
+  
+}
+.body_details .body_box_one #accordion li label{
+   font-size: 24px;
    border: 2px solid;
-
-
+   margin-bottom: 20px;
+   padding: 20px 15px;
+   border-radius: 20px;
 }
-.body_details .body_box_two{
-    width: 400px;
-   height: 400px;
-   background: url(assets/luis-reyes-mTorQ9gFfOg-unsplash.jpg);
-   background-position: center;
-   background-size: cover;
-}
-
-.martial_arts{
-   background: white;
-   color: black;
-   display : grid;
-   grid-template-columns: repeat(auto-fill,minmax(100px,auto));
-   grid-template-rows: repeat(auto-fill,minmax(100px,auto));
-   gap: 2px;
-}
-
-.nutritional_heading{
-     font-size: 32px;
-   margin-top: 2%;
-   margin-left: 2%;
-    border-bottom: 3px solid;
-    width: fit-content;
-    padding: 5px;
-    margin-bottom: 20px;
-    align-self: start;
-}
-
-.nutritional_programs{
-   background-color: #ffffff2b;
-   display: flex;
-   flex-direction: column;
-   align-items: center;  
-}
-.nutritional_deatails{
-   width: 1000px;
-   height: 400px;
-   display: flex;
-   justify-content:space-between;
-   align-items: center;
-
-}
-.nutritional_box1{
-   overflow-y: auto;
-   overflow-x:hidden;
-   width: 300px;
-   height: 400px;
-}
-.nutritional_box2{
-   overflow-y: auto;
-   overflow-x:hidden;
-    width: 300px;
-   height: 400px;
-}
-.nutritional_box3{
+.body_box_one{
   overflow-y: auto;
    overflow-x:hidden;
    width: 300px;
+   max-height: 400px;
+   border-bottom: 3px solid black;
+}
+.body_box_one::-webkit-scrollbar{
+   background:transparent;
+   width: 7px;
+}
+.body_box_one::-webkit-scrollbar-thumb{
+   background-color: rgba(255, 255, 255, 0.555);
+   border-radius: 10px;
+   cursor: pointer;
+}
+.body_details .body_box_one #accordion .content{
+   font-size: 24px;
+   line-height: 32px;
+   width: 300px;
+}
+.body_details .body_box_two{
+   width: 450px;
    height: 400px;
+   background: url(assets/bodybuilding1.jpg);
+   background-position: center;
+   background-size: cover;
+   border-radius: 5px;
+   transition: all .05s ease;
+   box-shadow: 2px 5px 10px black;
+} 
+.body_details .body_box_two:hover{
+   transform: scale(1.005);
 }
-#accordion{
+
+
+
+
+
+#maccordion{
     margin: 10px auto;
-    width: 280px;
+    width: 95%;
 }
-#accordion li{
+#maccordion .li{
 list-style: none;
 width: 100%;
 margin-bottom: 10px;
-background: transparent;
+background: rgba(255, 255, 255, 0.334);
 padding: 10px ;
+    border-radius: 10px;
+
 }
-#accordion li label{
+#maccordion .li label{
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
     font-weight: bolder;
-    color: dodgerblue;
+    color: wheat;
     cursor: pointer;
+    text-shadow: 2px 2px 2px black;
 }
-#accordion label + input[type="checkbox"]{
+#maccordion label + input[type="radio"]{
     display: none;
 }
-#accordion li label span{
+#maccordion .li label span{
     transform: rotate(90deg);
     font-size: 22px;
     color: red;
 }
-#accordion .content{
+#maccordion .mcontent{
+   color: #000;
     padding: 0 10px;
     line-height: 25px;
     max-height: 0;
     overflow: hidden;
     transition: max-height .5s;
 }
+#maccordion label + input[type="radio"]:checked + .mcontent{
+    max-height: 400px;
+}
+
+
+
+
+
+.nutritional_programs{
+   background: rgba(255, 255, 255, 0.05);
+   display: flex;
+   flex-direction: column;
+   align-items: center;  
+   border: 1px solid black;
+}
+
+.nutritional_deatails{
+   width: 1000px;
+   height: 400px;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+}
+.nutritional_box{
+   overflow-y: auto;
+   overflow-x:hidden;
+   width: 300px;
+   max-height: 400px;
+   border-bottom: 3px solid black;
+}
+.nutritional_programs .heading{
+   margin-bottom: 50px;
+   color:wheat;
+   text-shadow: 2px 1px 1px black;
+}
+#accordion{
+   margin: 10px auto;
+   width: 280px;
+}
+#accordion li{
+   list-style: none;
+   width: 100%;
+   margin-bottom: 10px;
+   background: transparent;
+   padding: 10px ;
+}
+#accordion li label{
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 18px;
+   font-weight: bolder;
+   color:wheat;
+   text-shadow: 2px 1px 1px black;
+   cursor: pointer;
+}
+#accordion label + input[type="checkbox"]{
+   display: none;
+}
+#accordion li label span{
+   transform: rotate(90deg);
+   font-size: 22px;
+   color: red;
+}
+#accordion li label span:hover{
+  color: white;
+}
+#accordion .content{
+   padding: 0 10px;
+   line-height: 25px;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height .5s;
+}
 #accordion label + input[type="checkbox"]:checked + .content{
-    max-height: 280px;
+   max-height: 100%;
 }
-
+.nutritional_box::-webkit-scrollbar{
+   background:transparent;
+   width: 7px;
+}
+.nutritional_box::-webkit-scrollbar-thumb{
+   background-color: rgba(255, 255, 255, 0.555);
+   border-radius: 10px;
+   cursor: pointer;
+}
+.box_img:nth-child(n){
+   width: 235px;
+   height: 235px;
+   margin:0 auto;
+   margin-bottom: 50px;
+   background-size: cover;
+   background-position: center;
+   box-shadow: 2px 5px 10px black;
+   border-radius: 10px;
+}
 .box1_img{
-   width: 235px;
-   height: 235px;
-   border: 2px solid green;
-   margin:0 auto;
-   margin-bottom: 50px;
+   background-image: url(assets/weight\ loss.jpg);
 }
-.nutritional_box1::-webkit-scrollbar{
-   background:transparent;
-   width: 7px;
-   
-}
-.nutritional_box1::-webkit-scrollbar-thumb{
-   background-color: rgba(255, 255, 255, 0.555);
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-
 .box2_img{
-   width: 235px;
-   height: 235px;
-   border: 2px solid green;
-   margin:0 auto;
-   margin-bottom: 50px;
+   background-image: url(assets/bulking1.jpg);
 }
-.nutritional_box2::-webkit-scrollbar{
-   background:transparent;
-   width: 7px;
-   
-}
-.nutritional_box2::-webkit-scrollbar-thumb{
-   background-color: rgba(255, 255, 255, 0.555);
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-
 .box3_img{
-   width: 235px;
-   height: 235px;
-   border: 2px solid green;
-   margin:0 auto;
-   margin-bottom: 50px;
+   background-image: url(assets/healthy\ diet.jpg);
 }
-.nutritional_box3::-webkit-scrollbar{
-   background:transparent;
-   width: 7px;
-   
+.box_img:nth-child(n):hover{
+   transform: scale(1.02);
 }
-.nutritional_box3::-webkit-scrollbar-thumb{
-   background-color: rgba(255, 255, 255, 0.555);
-    border-radius: 7px;
-    cursor: pointer;
+
+
+
+
+
+.bmi_calculator{
+   background: rgba(255, 255, 255, 0.05);
+   margin-left: 55px;
+   display: flex;
+   flex-direction: column;
+   align-items:center;   
+  
+}
+
+.bmi_container{
+   width: 900px;
+   height: 400px;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+}
+
+.bmi_container .bmi_box1{
+   border: 2px solid wheat;
+   width: 450px;
+   height: 400px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+}
+.bmi_box .height_weight_container{
+   border: 2px solid wheat;
+   border-radius: 10px;
+   padding: 15px 25px;
+}
+.bmi_box .height_weight_container label{
+  font-size: 24px;
+  color: wheat;
+}
+.bmi_box .height_weight_container #heightcm,#weightkg{
+   padding: 10px;
+   padding-right: 50px;
+   border-radius: 10px;
+   text-align: left;
+   background-color: #ffffff2c;
+   border: none;
+   margin-left: 15px;
+}
+input::placeholder{
+   color: white;
+}
+.bmi_btn{
+   padding: 20px 40px;
+   border: 2px solid wheat;
+   border-radius: 10px;
+   background-color: transparent;
+   color: wheat;
+   font-weight: bolder;
+   font-size: 24px;
+   text-shadow: 3px 3px 3px black;
+}
+.bmi_btn:hover{
+   background-color: rgb(160, 143, 111);
+   border: 2px solid white;
+   color: white;
+   text-shadow: none;
 
 }
+
+
+.bmi_container .bmi_box2{
+   width: 420px;
+   height: 400px;
+   margin: 10px;
+   border-left: 2px solid wheat;
+
+} 
+
+
+
+
+.bmi_result_status{
+   display: flex;
+   font-size: 24px;
+   padding: 50px;
+   
+}
+.bmi_result_status p{
+   border-bottom: 3px solid wheat;
+   margin-bottom: 20px;
+}
+.result{
+   margin-left: 20px;
+   color: wheat;
+   font-weight: bold;
+}
+.status{
+   margin-left: 20px;
+   color: wheat;
+   font-weight: bold;
+}
+.status_container{
+   margin-bottom: 10px;
+   padding: 20px 50px;
+
+}
+.recommendations{
+   display: flex;
+   justify-content:space-around;
+}
+.recommendation{
+   padding: 10px 40px;
+   color: wheat;
+   font-size: 20px;
+   max-height: 150px;
+   max-width: 250px;
+}
+.btn_r_container{
+   display: flex;
+   align-self: center;   
+}
+.recommendation_btn{
+   color: wheat;
+   font-size: 24px;
+   width: 100px;
+   height: 140px;
+   padding: 10px;
+   background-color: transparent;
+   border: 1px solid wheat;
+}
+
+
+
+footer{
+    background:rgb(37, 34, 34);
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+footer .logo_container h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    
+}
+footer .logo_container{
+   padding-left: 20px;
+   border-left:2px solid white;
+}
+
+footer .logo_container p{
+    max-width: 400px;
+    line-height: 25px;
+}
+.about_company{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.about_company .container{
+    margin-right: 40px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 150px;
+    width: 200px;
+
+}
+.about_company .container h1{
+    margin-bottom: 60px;
+
+}
+.about_company .container p:nth-child(n){
+   margin-bottom: 20px;
+   font-family: sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   cursor: pointer;
+}
+footer .icon{
+   width: 30px;
+   height: 30px;
+}
+
+.bmi_container .bmi_box1{
+   border: none;
+}
+
+
+
