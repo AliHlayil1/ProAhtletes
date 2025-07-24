@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProAhletes</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <script>
-        const img1=document.querySelector('.img_one');
-        const img2=document.querySelector('.img_two');
-        img1.addEventListener('mouseenter',()=>{img1.style.transform='scale(0.9)'});
-        img1.addEventListener('ouseleave',()=>{img1.style.transform='scale(1)'});
-    </script>
+    <script src="app.js"></script>
+
     <nav>
+
         <div class="logo">
             <h1>Logo</h1>
         </div>
 
         <ul>
-            <li><a href=""> Home</a></li>
-            <li><a href="">Profile</a></li>
-            <li><a href="">About Us</a></li>
-            <li ><a href="">F&Q</a></li>
+            <li>
+                <a href=""> Home</a>
+            </li>
+
+            <li>
+                <a href="">Profile</a>
+            </li>
+
+            <li>
+                <a href="">About Us</a>
+            </li>
+
+            <li>
+                <a href="">F&Q</a>
+            </li>
+
         </ul>
+
     </nav>
 
 
@@ -38,18 +50,33 @@
 
                     <h1>Who Are We?</h1>
                 </div>
-                    <div class="sub_heading">
-                        At <i><b>ProAthletes</b></i> Gym, we are dedicated to empowering individuals of all ages and fitness levels to achieve their health and wellness goals. Our comprehensive facility offers a diverse range of services designed to cater to your unique needs, whether you're a seasoned athlete or just starting your fitness journey. 
+                <div class="sub_heading">
+                    At <i><b>ProAthletes</b></i> Gym, we are dedicated to empowering individuals of all ages and fitness
+                    levels to achieve their health and wellness goals. Our comprehensive facility offers a diverse range
+                    of services designed to cater to your unique needs, whether you're a seasoned athlete or just
+                    starting your fitness journey.
 
-                        Dive into the world of <i><b>bodybuilding</b></i> with our expert trainers who will guide you through personalized strength training programs. Explore the discipline and focus of <i><b>martial arts</b></i>, where you can learn self-defense techniques while improving your physical fitness. If you're looking for <i><b>nutritional guidance</b></i>, our certified nutritionists provide tailored advice to help you fuel your body effectively.
+                    Dive into the world of <i><b>bodybuilding</b></i> with our expert trainers who will guide you
+                    through personalized strength training programs. Explore the discipline and focus of <i><b>martial
+                            arts</b></i>, where you can learn self-defense techniques while improving your physical
+                    fitness. If you're looking for <i><b>nutritional guidance</b></i>, our certified nutritionists
+                    provide tailored advice to help you fuel your body effectively.
 
-                        For those aiming to shed pounds, our <i><b>weight loss programs</b></i> combine effective workout routines with nutritional support to ensure sustainable results. Find your zen with our rejuvenating <i><b>yoga classes</b></i>, perfect for enhancing flexibility and mental clarity. Get your heart pumping in our dynamic <i><b>boxing sessions</b></i>, designed to build strength and stamina while having fun.
+                    For those aiming to shed pounds, our <i><b>weight loss programs</b></i> combine effective workout
+                    routines with nutritional support to ensure sustainable results. Find your zen with our rejuvenating
+                    <i><b>yoga classes</b></i>, perfect for enhancing flexibility and mental clarity. Get your heart
+                    pumping in our dynamic <i><b>boxing sessions</b></i>, designed to build strength and stamina while
+                    having fun.
 
-                        We also believe in fostering a love for fitness from a young age, which is why we offer a dedicated <i><b>gym for kids</b></i>, encouraging healthy habits early on through engaging and safe activities.
+                    We also believe in fostering a love for fitness from a young age, which is why we offer a dedicated
+                    <i><b>gym for kids</b></i>, encouraging healthy habits early on through engaging and safe
+                    activities.
 
-                        At <i><b>ProAthletes</b></i> Gym, we are more than just a gym; we are a community committed to your success. Join us today and discover the endless possibilities that await you on your fitness journey!
-                    </div>
-                
+                    At <i><b>ProAthletes</b></i> Gym, we are more than just a gym; we are a community committed to your
+                    success. Join us today and discover the endless possibilities that await you on your fitness
+                    journey!
+                </div>
+
             </div>
 
 
@@ -64,93 +91,276 @@
 
 
         <section class="section_two">
-        
+
             <div class="box bodybuilding">
-               
-                <div class="body_heading">
+                <div class="heading">
                     <h1>Body Building</h1>
                 </div>
-
                 <div class="body_details">
+                    <div class="body_box_one ">
+                        <ul id="accordion">
+                            <li>
+                                <label for="second">About Bodybuilding<span>&#x3e;</span></label>
+                                <input type="checkbox" name="accordion" id="second" unchecked>
+                                <div class="content">
+                                    Join us for expert training in bodybuilding, state-of-the-art equipment, and a
+                                    supportive community. Whether you're a beginner or a pro, our personalized programs
+                                    will help you build strength and muscle. Sign up now for a free trial and start your
+                                    journey to greatness!
 
-                    <div class="body_box_one "></div>
-                    <div class="body_box_two"></div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="body_box_two">
+                    </div>
                 </div>
             </div>
+
+
 
 
             <div class="box martial_arts">
-                martial arts
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
+                <div class="heading">Martial Arts :</div>
+                <ul id="maccordion">
+                    <li class="li">
+                        <label for="mfirst">What Is Martial Arts ?<span>&#x3e;</span></label>
+                        <input type="radio" name="maccordion" id="mfirst" unchecked>
+                        <div class="mcontent">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nihil autem temporibus
+                            sapiente debitis. Id tempore voluptatibus pariatur dignissimos, illo aperiam neque beatae
+                            illum ducimus laborum est. At impedit delectus atque est placeat similique, vitae quasi
+                            suscipit, ducimus veritatis iusto.
+                        </div>
+                    </li>
+
+
+
+                    <li class="li">
+                        <label for="msecond">Types Of Martial Arts<span>&#x3e;</span></label>
+                        <input type="radio" name="maccordion" id="msecond">
+                        <div class="mcontent">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nihil autem temporibus
+                            sapiente debitis. Id tempore voluptatibus pariatur dignissimos, illo aperiam neque beatae
+                            illum ducimus laborum est. At impedit delectus atque est placeat similique, vitae quasi
+                            suscipit, ducimus veritatis iusto.
+                        </div>
+                    </li>
+
+
+
+                    <li class="li">
+                        <label for="mthird">Benifts Of Practicing Martial Arts<span>&#x3e;</span></label>
+                        <input type="radio" name="maccordion" id="mthird">
+                        <div class="mcontent">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nihil autem temporibus
+                            sapiente debitis. Id tempore voluptatibus pariatur dignissimos, illo aperiam neque beatae
+                            illum ducimus laborum est. At impedit delectus atque est placeat similique, vitae quasi
+                            suscipit, ducimus veritatis iusto.
+                        </div>
+                    </li>
+
+                    <li class="li">
+                        <label for="mfourth">Conclusion<span>&#x3e;</span></label>
+                        <input type="radio" name="maccordion" id="mfourth">
+                        <div class="mcontent">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nihil autem temporibus
+                            sapiente debitis. Id tempore voluptatibus pariatur dignissimos, illo aperiam neque beatae
+                            illum ducimus laborum est. At impedit delectus atque est placeat similique, vitae quasi
+                            suscipit, ducimus veritatis iusto.
+                        </div>
+                    </li>
+                </ul>
             </div>
+
+
 
             <div class="box nutritional_programs">
 
-                <div class="nutritional_heading">
+                <div class="heading">
                     Nutritional Programs
                 </div>
                 <div class="nutritional_deatails">
-                    <div class="nutritional_box1">
+                    <div class="nutritional_box">
                         <h1 class="box_heading">
                             Weight Loss Programs
                         </h1>
+
                         <ul id="accordion">
                             <li>
                                 <label for="first">About Weight Losss<span>&#x3e;</span></label>
                                 <input type="checkbox" name="accordion" id="first" unchecked>
                                 <div class="content">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore delectus accusantium fuga voluptatibus facilis eum nam reiciendis aspernatur cumque, perferendis, quibusdam dolore possimus sapiente corrupti quae, aut ipsum at molestiae? 
+                                    Achieve Your Weight Loss Goals at ProAthletes Gym!
+                                    <br>
+                                    Ready to lose weight? Our programs include:
+                                    <br>
+                                    Personalized Nutrition Plans
+
+                                    Dynamic Workout Routines
+
+                                    Motivational Support
+
+                                    Progress Tracking
+
+                                    Special Offer: Sign up for a free consultation!
+
+                                    Transform your body and boost your confidence at ProAthletes Gym. Your journey
+                                    starts now!
                                 </div>
                             </li>
                         </ul>
-                        <div class="box1_img"></div>
+                        <div class="box_img box1_img"></div>
 
                     </div>
-                    <div class="nutritional_box2">
+                    <div class="nutritional_box">
                         <h1 class="box_heading">
-                            Weight Loss Programs
+                            Bulking
                         </h1>
                         <ul id="accordion">
                             <li>
-                                <label for="first1">About Weight Losss<span>&#x3e;</span></label>
+                                <label for="first1">About Gaining Muscle<span>&#x3e;</span></label>
                                 <input type="checkbox" name="accordion" id="first1" unchecked>
                                 <div class="content">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi commodi eos iste consequuntur eaque, nam inventore, ipsam consequatur quo architecto omnis obcaecati facilis accusantium dolorem tenetur. Similique obcaecati ullam nesciunt.
+                                    Bulk Up at ProAthletes Gym!
+                                    <br>
+
+                                    Are you looking to gain muscle and increase strength? Our bulking programs are
+                                    designed to help you achieve your goals with:
+
+                                    Customized Meal Plans: High-calorie, nutrient-dense meals tailored to your needs.
+
+                                    Strength Training Regimens: Focused workouts to maximize muscle growth.
+
+                                    Supplement Guidance: Recommendations for effective supplements.
+
+                                    Expert Coaching: Support from experienced trainers to keep you motivated.
+
+                                    Special Offer: Sign up for a free consultation and get started on your bulking
+                                    journey today!
+
+                                    Join us at ProAthletes Gym and build the physique you've always wanted!
                                 </div>
                             </li>
                         </ul>
-                        <div class="box2_img"></div>
+                        <div class="box_img box2_img"></div>
                     </div>
-                    <div class="nutritional_box3">
+                    <div class="nutritional_box">
                         <h1 class="box_heading">
-                            Weight Loss Programs
+                            Healthy Diets
                         </h1>
                         <ul id="accordion">
                             <li>
-                                <label for="first2">About Weight Losss<span>&#x3e;</span></label>
+                                <label for="first2">About Healthy Diets<span>&#x3e;</span></label>
                                 <input type="checkbox" name="accordion" id="first2" unchecked>
                                 <div class="content">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa aperiam dignissimos perferendis deserunt est veniam, hic quae minus, nam culpa soluta officia fuga veritatis nisi consequatur eos pariatur, numquam similique?
+                                    Fuel your workouts and maximize results with our tailored meal plans.
+
+                                    Why Choose Us?
+
+                                    • Customized Nutrition: Plans designed for your goals.
+
+                                    • Delicious Recipes: Nutritious and satisfying meals.
+
+                                    • Expert Guidance: Support from professional nutritionists.
+
+                                    • Community Support: Connect with others on the same journey.
+
+                                    Transform your training with ProAthletes! Sign up today!
                                 </div>
                             </li>
                         </ul>
-                        <div class="box3_img"></div>
+                        <div class="box_img box3_img"></div>
                     </div>
                 </div>
             </div>
-            <div class="box yoga">5</div>
-            <div class="box boxing">6</div>
-            <div class="box kids">7</div>
+            <div class="box bmi_calculator">
+                <div class="heading">
+                    <h1>Body Mass Index (BMI) Calculator :</h1>
+                </div>
+                <div class="bmi_container">
+                    <div class="bmi_box bmi_box1">
+
+                        <div class="height_container height_weight_container">
+
+                            <label for="heightcm">Height: </label>
+                            <input type="text" name="" id="heightcm" placeholder="Enter your height in cm unit">
+                        </div>
+
+                        <div class="weight_container height_weight_container">
+                            <label for="weightkg">Weight: </label>
+                            <input type="text" name="" id="weightkg" placeholder="Enter your weigth in kg unit">
+                        </div>
+
+                        <button class="bmi_btn" onclick="showResult()">Claculate </button>
+
+                    </div>
+
+                    <div class="bmi_box bmi_box2">
+                        <div class="bmi_result_status result_container">
+                            <p>Your BMI Is :
+                            <p class="result"></p>
+                            </p>
+                        </div>
+                        <div class="bmi_result_status status_container">
+                            <p>You Are :
+                            <p class="status"></p>
+                            </p>
+                        </div>
+                        <div class="recommendations">
+                            <p class="recommendation"></p>
+                            <div class="btn_r_container">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
 
         </section>
 
     </header>
-    
+    <footer>
+        <div class="logo_container">
+            <h1 class="logo">Logo</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatibus voluptate fuga suscipit
+                doloribus cum fugit animi vel odit! Voluptas quis voluptatum, consequuntur debitis non quas sed quia.
+                Accusantium, sit.</p>
+
+        </div>
+
+
+        <div class="about_company">
+            <div class="container">
+                <h1>About</h1>
+                <p>News & Blogs<img src="icons/newspaper-solid.svg" class="icon"></p>
+                <p>Features <img src="icons/crown-solid.svg" class="icon"></p>
+                <p>Location <img src="icons/location-dot-solid.svg" class="icon"></p>
+            </div>
+
+
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Email <img src="icons/envelope-solid.svg" class="icon"></p>
+                <p>WhatsApp <img src="icons/whatsapp-brands.svg" class="icon"></p>
+                <p>Telegram <img src="icons/telegram-brands.svg" class="icon"></p>
+
+            </div>
+
+
+            <div class="container">
+                <h1>Follow Us</h1>
+                <p>Instagram <img src="icons/square-instagram-brands.svg" class="icon"></p>
+                <p>Facebook <img src="icons/facebook-brands.svg" class="icon"></p>
+                <p>Tik Tok <img src="icons/tiktok-brands.svg" class="icon"></p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
